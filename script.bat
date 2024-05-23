@@ -1,3 +1,4 @@
+cls
 javac DispositivoElectronico.java TV.java Computador.java
 javac Traccion.java TraccionMecanica.java TraccionDelantera.java TraccionTrasera.java TraccionCuatroRuedas.java Traccion4X4.java TraccionHumana.java TraccionAnimal.java TraccionVapor.java
 javac Transmision.java TransmisionManual.java TransmisionAutomatica.java
