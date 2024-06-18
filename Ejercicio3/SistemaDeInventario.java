@@ -37,7 +37,7 @@ public class SistemaDeInventario {
             inventario.mostrar();
 			
 			// Aquí se lanza la excepción (personalizada) de entrada inválida
-			inventario.agregarProducto("Manzanas", -100, -5);
+			inventario.agregarProducto("Peras", -100, -5);
 
             inventario.mostrar();
         } 
