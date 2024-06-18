@@ -98,6 +98,7 @@ public class SistemaDeInventario {
         }
 		
 		System.out.println("----------------------------------------------------------------------");
+		System.out.println("FIN");
     }
 }
 
