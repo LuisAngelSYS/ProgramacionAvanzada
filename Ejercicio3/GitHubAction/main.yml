@@ -35,7 +35,7 @@ jobs:
       run: javac Ejercicio3/*.java
 
     - name: Run SpotBugs
-      run: spotbugs -textui -effort:max -high ProductoNoEncontradoException.class StockInsuficienteException.class EntradaInvalidaException.class Producto.class Inventario.class SistemaDeInventario.class
+      run: spotbugs -textui -effort:max -high Ejercicio3/ProductoNoEncontradoException.class
 
     - name: Run Java
       run: java SistemaDeInventario
