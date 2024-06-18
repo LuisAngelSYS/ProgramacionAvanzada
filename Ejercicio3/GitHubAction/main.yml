@@ -38,7 +38,7 @@ jobs:
       run: spotbugs -textui -effort:max -high Ejercicio3/*.class
 
     - name: Run Java
-      run: java Ejercicio3.SistemaDeInventario
+      run: java -cp Ejercicio3 Ejercicio3.SistemaDeInventario
 
     - name: Download and Install OWASP Dependency-Check
       run: |
