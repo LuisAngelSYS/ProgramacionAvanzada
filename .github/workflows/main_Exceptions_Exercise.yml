@@ -35,10 +35,10 @@ jobs:
       run: javac Ejercicio3/*.java
 
     - name: Run SpotBugs
-      run: spotbugs -textui -effort:max -high ProductoNoEncontradoException.class StockInsuficienteException.class EntradaInvalidaException.class Producto.class Inventario.class SistemaDeInventario.class
+      run: spotbugs -textui -effort:max -high Ejercicio3/*.class
 
     - name: Run Java
-      run: java SistemaDeInventario
+      run: java Ejercicio3/SistemaDeInventario
 
     - name: Download and Install OWASP Dependency-Check
       run: |
