@@ -49,5 +49,5 @@ jobs:
         sudo ln -s /opt/dependency-check/bin/dependency-check.sh /usr/local/bin/dependency-check.sh
 
     - name: Run OWASP Dependency-Check
-      run: dependency-check.sh --project Pez --scan . --disableAssembly
+      run: dependency-check.sh --project SistemaDeInventario --scan . --disableAssembly
       
