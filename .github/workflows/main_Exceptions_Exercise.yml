@@ -32,7 +32,7 @@ jobs:
       run: find . -name "*.class" -type f -delete
       
     - name: Compile Java
-      run: javac ProductoNoEncontradoException.java StockInsuficienteException.java EntradaInvalidaException.java Producto.java Inventario.java SistemaDeInventario.java
+      run: javac Ejercicio3/*.java
 
     - name: Run SpotBugs
       run: spotbugs -textui -effort:max -high Pez.class
