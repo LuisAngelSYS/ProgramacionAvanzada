@@ -1,0 +1,3 @@
+javac ProductoNoEncontradoException.java StockInsuficienteException.java EntradaInvalidaException.java Producto.java Inventario.java SistemaDeInventario.java
+
+java SistemaDeInventario

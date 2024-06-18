@@ -10,7 +10,7 @@ public class ManejadorComando implements Manejador {
 	
 	public void aplicar(Invocador invocador, Recibidor recibidor, String mensaje) {
 		
-		if(ConjuntoDeInstrucciones.instruccionCorrecta(mensaje)) {
+		if(ConjuntoDeInstrucciones.instruccionCorrecta(mensaje) && !ConjuntoDeInstrucciones.esCommit(mensaje.trim())) {
 			if(mensaje.toUpperCase().equals("TIME")){
 				recibidor.setHoraActualizada(HoraActualizada.getInstance());
 				invocador.agregarComando(new TiempoOn(recibidor.getHoraActualizada()));
@@ -37,9 +37,6 @@ public class ManejadorComando implements Manejador {
 			}				
 			else if (mensaje.toUpperCase().equals("CLS")){
 				invocador.agregarComando(new LimpiarPantalla());
-			}				
-			else if(mensaje.toUpperCase().equals("COMMIT")){
-				invocador.aplicarEnBloque();
 			}
 		}
 		else {
